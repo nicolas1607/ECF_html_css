@@ -77,18 +77,16 @@ h3{
     padding-left: 0 5rem;
 }
 
-.nav-item{
+
+.nav-link{
     font-weight: 600;
     line-height: 2.4rem;
     text-align: center;
-}
-
-.nav-link{
     padding: 1rem;
     font-size: 1.5rem;
 }
 
-.nav-link:not(#active):hover{
+.nav-item a:not(#active):hover{
     background-color: white;
     color: #FD7E37;
 }
@@ -190,10 +188,6 @@ h3{
     transform: translateY(-1rem);
 }
 
-.actu-link:hover{
-    animation: slide infinite .75s linear;
-}
-
 
 
 
@@ -248,10 +242,10 @@ h3{
     font-size: 1.6rem;
     line-height: 2.4rem;
     border: solid 1px white;
-    width: 70%;
+    width: 65%;
     margin: auto;
     margin-top: 2rem;
-    padding: 1rem 0;
+    padding: .5rem 0;
     border-radius: 1rem;
 }
 
