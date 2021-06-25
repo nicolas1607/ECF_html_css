@@ -1,0 +1,9 @@
+.container {
+    width: 100%;
+    padding: 0 16rem;
+}
+
+@media screen and (min-width: 36em) { /* Indiquer les mesures en em avec une base de 16px - Ex : 576/16 = 36em*/}
+@media screen and (min-width: 48em) { /* eq 768px */}
+@media screen and (min-width: 62em) { /* eq 992px */}
+@media screen and (min-width: 75em) { /* eq 1200px */}

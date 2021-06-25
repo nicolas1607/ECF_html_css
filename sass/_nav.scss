@@ -1,0 +1,40 @@
+.nav, .nav-list{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav{
+    background-color: #FD7E37;
+}
+
+.logo{
+    font-size: 4rem;
+}
+
+.nav-list{
+    padding-left: 0 5rem;
+}
+
+
+.nav-link{
+    font-weight: 600;
+    line-height: 2.4rem;
+    text-align: center;
+    padding: 1rem;
+    font-size: 1.5rem;
+}
+
+.nav-item a:not(#active):hover{
+    background-color: white;
+    color: #FD7E37;
+}
+
+.logo{
+    color: white;
+    margin: 2rem 0;
+}
+
+.active a{
+    opacity: 0.5;
+}

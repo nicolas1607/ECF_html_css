@@ -1,0 +1,97 @@
+@import 'reset';
+@import 'helpers';
+@import 'layout';
+@import 'generique';
+@import 'typo';
+@import 'nav';
+@import 'card';
+@import 'footer';
+@import 'important';
+
+
+/* Hero */
+.hero{
+    background-image: url("../img/Photo\ arrière-plan.png");
+    position: relative;
+    height: 71rem;
+}
+
+.hero-welcome{
+    width: 75rem;
+    height: 30rem;
+    background-color: #00000080;
+    opacity: 1;
+    position: absolute;
+    bottom: 10%;
+    right: 10%;
+    color: white;
+    padding: 3rem;
+}
+
+.hero-link{
+    padding: 1rem 2rem;
+    background-color: #FD7E37;
+    position: absolute;
+    right: 3rem;
+    bottom: 3rem;
+    line-height: 3.6rem;
+    font-weight: 600;
+}
+
+/* Les dernières actualités */
+.actu-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 3rem;
+}
+
+/* Les modules de formation */
+.module-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+}
+
+/* Rencontrez les étudiants */
+.etudiant{
+    background-color: #FD7E37;
+}
+
+.etudiants{
+    display: flex;
+    justify-content: space-between;
+}
+
+.etudiant{
+    color: white;
+}
+
+.etu-content{
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.etu-name{
+    margin-top: 2rem;
+    font-size: 2.4rem;
+    line-height: 3.6rem;
+    font-weight: 600;
+}
+
+.etu-link{
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    border: solid 1px white;
+    width: 65%;
+    margin: auto;
+    margin-top: 2rem;
+    padding: .5rem 0;
+    border-radius: 1rem;
+}
+
+.etu-link:hover{
+    background-color: white;
+    color: #FD7E37;
+}
