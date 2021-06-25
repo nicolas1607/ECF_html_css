@@ -1,0 +1,318 @@
+a{
+    text-decoration: none;
+    color: white;
+}
+
+
+
+
+/* Typographie */
+body {
+    font-family: Montserrat, sans-serif;
+    font-size: 2rem;
+    line-height: 3rem;
+}
+
+h1, h2, h3, h4, .logo {
+    font-family: Raleway, sans-serif;
+}
+
+h1, h2, .logo{
+    font-weight: bold;
+}
+
+h1{
+    font-size: 5.2rem;
+    line-height: 7.6rem;
+}
+
+h2{
+    font-size: 4.8rem;
+    line-height: 4.8rem;
+    text-align: center;
+    margin-bottom: 10rem;
+}
+
+h3{
+    font-weight: 600;
+    font-size: 2.4rem;
+    line-height: 3.6rem;
+}
+
+
+
+
+
+/* Layout */
+.container {
+    width: 100%;
+    padding: 0 16rem;
+}
+
+@media screen and (min-width: 36em) { /* Indiquer les mesures en em avec une base de 16px - Ex : 576/16 = 36em*/}
+@media screen and (min-width: 48em) { /* eq 768px */}
+@media screen and (min-width: 62em) { /* eq 992px */}
+@media screen and (min-width: 75em) { /* eq 1200px */}
+
+
+
+
+
+/* Navigation */
+.nav, .nav-list{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav{
+    background-color: #FD7E37;
+}
+
+.logo{
+    font-size: 4rem;
+}
+
+.nav-list{
+    padding-left: 0 5rem;
+}
+
+.nav-item{
+    font-weight: 600;
+    line-height: 2.4rem;
+    text-align: center;
+}
+
+.nav-link{
+    padding: 1rem;
+    font-size: 1.5rem;
+}
+
+.nav-link:not(#active):hover{
+    background-color: white;
+    color: #FD7E37;
+}
+
+.logo{
+    color: white;
+    margin: 2rem 0;
+}
+
+.active a{
+    opacity: 0.5;
+}
+
+
+
+
+
+/* Hero */
+.hero{
+    background-image: url("../img/Photo\ arrière-plan.png");
+    position: relative;
+    height: 71rem;
+}
+
+.hero-welcome{
+    width: 75rem;
+    height: 30rem;
+    background-color: #00000080;
+    opacity: 1;
+    position: absolute;
+    bottom: 10%;
+    right: 10%;
+    color: white;
+    padding: 3rem;
+}
+
+.hero-link{
+    padding: 1rem 2rem;
+    background-color: #FD7E37;
+    position: absolute;
+    right: 3rem;
+    bottom: 3rem;
+    line-height: 3.6rem;
+    font-weight: 600;
+}
+
+
+
+
+
+/* Les cards */
+.actu-article{
+    box-shadow: 1px 1px 5px lightgray;
+    position: relative;
+}
+
+.article-img{
+    width: 100%;
+}
+
+.article-time, .article-name, .article-text, .article-link{
+    margin-top: 2rem;
+}
+
+.article-time{
+    display: flex;
+    align-items: center;
+}
+
+.article-datetime{
+    margin-left: 1rem;
+}
+
+.article-content{
+    padding: 2rem;
+    margin-bottom: 5rem;
+}
+
+.article-link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #FD7E37;
+    padding: 1rem;
+    margin: 0;
+    font-weight: bold;
+}
+
+.article-link img{
+    margin-left: 1.5rem;
+}
+
+.actu-article:hover{
+    box-shadow: 5px 5px 5px 3px lightgray;
+    transform: translateY(-1rem);
+}
+
+.actu-link:hover{
+    animation: slide infinite .75s linear;
+}
+
+
+
+
+
+/* Les dernières actualités */
+.actu-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 3rem;
+}
+
+/* Les modules de formation */
+.module-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+}
+
+
+
+
+
+/* Rencontrez les étudiants */
+.etudiant{
+    background-color: #FD7E37;
+}
+
+.etudiants{
+    display: flex;
+    justify-content: space-between;
+}
+
+.etudiant{
+    color: white;
+}
+
+.etu-content{
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.etu-name{
+    margin-top: 2rem;
+    font-size: 2.4rem;
+    line-height: 3.6rem;
+    font-weight: 600;
+}
+
+.etu-link{
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    border: solid 1px white;
+    width: 70%;
+    margin: auto;
+    margin-top: 2rem;
+    padding: 1rem 0;
+    border-radius: 1rem;
+}
+
+.etu-link:hover{
+    background-color: white;
+    color: #FD7E37;
+}
+
+
+
+
+
+/* Footer */
+footer{
+    background-color: #FD7E37;
+    padding: 4rem 0;
+}
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.network{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contact{
+    line-height: 3.6rem;
+    color: white;
+}
+
+.contact-title{
+    font-weight: 600;
+}
+
+.mention{
+    font-size: 1.6rem;
+}
+
+.politique{
+    margin-left: 2rem;
+}
+
+.network{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 3rem;
+}
+
+
+
+
+
+
+/* IMPORTANT */
+.etudiant, .actu, .module{
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+}
