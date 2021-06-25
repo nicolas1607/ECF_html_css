@@ -1,0 +1,28 @@
+@import 'reset';
+@import 'helpers';
+@import 'layout';
+@import 'generique';
+@import 'typo';
+@import 'nav';
+@import 'etudiant';
+@import 'slide';
+@import 'footer';
+@import 'important';
+
+.etudiant{
+    background-color: white;
+    color: black;
+    .etudiants{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 5rem;
+    }
+    .etu-link{
+        border: solid 2px #FD7E37;
+        color: #FD7E37;
+        &:hover{
+            background-color: #FD7E37;
+            color: white;
+        }
+    }
+}

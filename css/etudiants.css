@@ -234,56 +234,6 @@ h2 {
   opacity: 0.5;
 }
 
-.actu-article {
-  box-shadow: 1px 1px 5px lightgray;
-  position: relative;
-}
-.actu-article:hover {
-  box-shadow: 5px 5px 5px 3px lightgray;
-  transform: translateY(-1rem);
-}
-
-.article-img {
-  width: 100%;
-}
-
-.article-content {
-  padding: 2rem;
-  margin-bottom: 5rem;
-}
-.article-content .article-time, .article-content .article-name, .article-content .article-text, .article-content .article-link {
-  margin-top: 2rem;
-}
-.article-content .article-time {
-  display: flex;
-  align-items: center;
-}
-.article-content .article-time .article-datetime {
-  margin-left: 1rem;
-}
-.article-content .article-link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background-color: #FD7E37;
-  padding: 1rem;
-  margin: 0;
-  font-weight: bold;
-}
-.article-content .article-link img {
-  margin-left: 1.5rem;
-}
-
-.actu-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 3rem;
-}
-
 .etudiant {
   background-color: #FD7E37;
   color: white;
@@ -320,10 +270,30 @@ h2 {
   color: #FD7E37;
 }
 
-.module-grid {
+.slide {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 3rem;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  gap: 1rem;
+  width: 25%;
+  padding: 0;
+  margin: auto;
+  margin-top: 5rem;
+}
+.slide .slide-link {
+  text-align: center;
+  color: #FD7E37;
+  border: solid 0.2rem #FD7E37;
+  border-radius: 0.5rem;
+}
+.slide .slide-link:not(.arrow) {
+  padding: 0.5rem 1.5rem;
+}
+.slide .slide-link:hover {
+  background-color: #FD7E37;
+  color: white;
+}
+.slide .arrow {
+  padding: 0.5rem 0.5rem;
 }
 
 footer {
@@ -362,51 +332,22 @@ footer .footer {
   padding-bottom: 8rem;
 }
 
-h1 {
-  font-size: 5.2rem;
-  line-height: 7.6rem;
+.etudiant {
+  background-color: white;
+  color: black;
 }
-
-h2 {
-  font-size: 4.8rem;
-  line-height: 4.8rem;
-  text-align: center;
-  margin-bottom: 5rem;
+.etudiant .etudiants {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 5rem;
 }
-
-h3 {
-  font-weight: 600;
-  font-size: 2.4rem;
-  line-height: 3.6rem;
+.etudiant .etu-link {
+  border: solid 2px #FD7E37;
+  color: #FD7E37;
 }
-
-/* Hero */
-.hero {
-  background-image: url("../img/Photo arrière-plan.png");
-  position: relative;
-  height: 71rem;
-}
-
-.hero-welcome {
-  width: 75rem;
-  height: 30rem;
-  background-color: #00000080;
-  opacity: 1;
-  position: absolute;
-  bottom: 10%;
-  right: 10%;
-  color: white;
-  padding: 3rem;
-}
-
-.hero-link {
-  padding: 1rem 2rem;
+.etudiant .etu-link:hover {
   background-color: #FD7E37;
-  position: absolute;
-  right: 3rem;
-  bottom: 3rem;
-  line-height: 3.6rem;
-  font-weight: 600;
+  color: white;
 }
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=etudiants.css.map */
