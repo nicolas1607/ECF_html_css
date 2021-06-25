@@ -5,6 +5,9 @@
 @import 'typo';
 @import 'nav';
 @import 'card';
+@import 'actualite';
+@import 'etudiant';
+@import 'module';
 @import 'footer';
 @import 'important';
 
@@ -36,62 +39,4 @@
     bottom: 3rem;
     line-height: 3.6rem;
     font-weight: 600;
-}
-
-/* Les dernières actualités */
-.actu-grid{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 3rem;
-}
-
-/* Les modules de formation */
-.module-grid{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 3rem;
-}
-
-/* Rencontrez les étudiants */
-.etudiant{
-    background-color: #FD7E37;
-}
-
-.etudiants{
-    display: flex;
-    justify-content: space-between;
-}
-
-.etudiant{
-    color: white;
-}
-
-.etu-content{
-    text-align: center;
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-}
-
-.etu-name{
-    margin-top: 2rem;
-    font-size: 2.4rem;
-    line-height: 3.6rem;
-    font-weight: 600;
-}
-
-.etu-link{
-    font-size: 1.6rem;
-    line-height: 2.4rem;
-    border: solid 1px white;
-    width: 65%;
-    margin: auto;
-    margin-top: 2rem;
-    padding: .5rem 0;
-    border-radius: 1rem;
-}
-
-.etu-link:hover{
-    background-color: white;
-    color: #FD7E37;
 }

@@ -4,7 +4,7 @@
   "description": "ECF_HTML_CSS",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "sasscompil": "sass sass:css --watch"
   },
   "repository": {
     "type": "git",
