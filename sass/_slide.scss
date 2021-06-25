@@ -1,0 +1,25 @@
+.slide{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 1rem;
+    width: 25%;
+    padding: 0;
+    margin: auto;
+    margin-top: 5rem;
+    .slide-link{
+        text-align: center;
+        color: #FD7E37;
+        border: solid .2rem #FD7E37;
+        border-radius: .5rem;
+        &:not(.arrow){
+            padding: .5rem 1.5rem;
+        }
+        &:hover{
+            background-color: #FD7E37;
+            color: white;
+        }
+    }
+    .arrow{
+        padding: .5rem .5rem;
+    }
+}

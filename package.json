@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/nicolas1607/ECF_html_css#readme",
   "devDependencies": {
-    "sass": "^1.35.1"
+    "sass": "^1.35.1",
+    "swiper": "^6.7.1"
   }
 }

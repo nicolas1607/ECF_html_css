@@ -1,0 +1,362 @@
+@charset "UTF-8";
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role=list],
+ol[role=list] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+*::before,
+*::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+/* Débuggueur CSS  */
+* {
+  /* outline: 1px solid red; */
+}
+
+html {
+  font-size: 0.625em;
+  /* fallback IE8+ */
+  font-size: calc(1em * .625);
+  /* IE9-IE11 math fixing. See http://bit.ly/1g4X0bX */
+}
+
+/* Remove focus for mouse users */
+:focus:not(:focus-visible) {
+  outline: none;
+}
+
+/* Set core body defaults */
+body {
+  font-size: 1.6rem;
+}
+
+/* Set text selection */
+::-moz-selection {
+  color: #000;
+  background-color: #fd0;
+}
+
+::selection {
+  color: #000;
+  background-color: #fd0;
+}
+
+/* Remove default padding */
+[role=list] {
+  margin: 0;
+  padding: 0;
+}
+
+/* Set cursor pointer */
+label[for],
+button,
+input[type=submit],
+select {
+  cursor: pointer;
+}
+
+/* Remove font style on address */
+address {
+  font-style: normal;
+}
+
+/* Text meant only for screen readers. */
+.screen-reader-text {
+  clip: rect(1px, 1px, 1px, 1px);
+  height: 1px;
+  overflow: hidden;
+  width: 1px;
+  position: absolute;
+  white-space: nowrap;
+}
+
+/* Image replacement technique 2012 H5BP  - https://css-tricks.com/the-image-replacement-museum/ */
+.ir {
+  font: 0/0 a;
+  color: transparent;
+  border: 0;
+  text-shadow: none;
+}
+
+/* Print external URLs */
+@media print {
+  a {
+    text-decoration: underline;
+  }
+
+  a[href]:not([href^="#"])::after {
+    content: "(" attr(href) ")";
+  }
+}
+.container {
+  width: 100%;
+  padding: 0 16rem;
+}
+
+@media screen and (min-width: 36em) {
+  /* Indiquer les mesures en em avec une base de 16px - Ex : 576/16 = 36em*/
+}
+@media screen and (min-width: 48em) {
+  /* eq 768px */
+}
+@media screen and (min-width: 62em) {
+  /* eq 992px */
+}
+@media screen and (min-width: 75em) {
+  /* eq 1200px */
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+
+body {
+  font-family: Montserrat, sans-serif;
+  font-size: 2rem;
+  line-height: 3rem;
+}
+
+h1, h2, h3, h4, .logo {
+  font-family: Raleway, sans-serif;
+}
+
+h1, h2, .logo {
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 5.2rem;
+  line-height: 7.6rem;
+}
+
+h2 {
+  font-size: 4.8rem;
+  line-height: 4.8rem;
+  text-align: center;
+  margin-bottom: 5rem;
+}
+
+h3 {
+  font-weight: 600;
+  font-size: 2.4rem;
+  line-height: 3.6rem;
+}
+
+.nav {
+  background-color: #FD7E37;
+}
+.nav, .nav .nav-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 0 5rem;
+}
+.nav .logo {
+  font-size: 4rem;
+  color: white;
+  margin: 2rem 0;
+}
+
+.nav-link {
+  font-weight: 600;
+  line-height: 2.4rem;
+  text-align: center;
+  padding: 1rem;
+  font-size: 1.5rem;
+}
+
+.nav-item a:not(#active):hover {
+  background-color: white;
+  color: #FD7E37;
+}
+
+.active a {
+  opacity: 0.5;
+}
+
+.actu-article {
+  box-shadow: 1px 1px 5px lightgray;
+  position: relative;
+}
+.actu-article:hover {
+  box-shadow: 5px 5px 5px 3px lightgray;
+  transform: translateY(-1rem);
+}
+
+.article-img {
+  width: 100%;
+}
+
+.article-content {
+  padding: 2rem;
+  margin-bottom: 5rem;
+}
+.article-content .article-time, .article-content .article-name, .article-content .article-text, .article-content .article-link {
+  margin-top: 2rem;
+}
+.article-content .article-time {
+  display: flex;
+  align-items: center;
+}
+.article-content .article-time .article-datetime {
+  margin-left: 1rem;
+}
+.article-content .article-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #FD7E37;
+  padding: 1rem;
+  margin: 0;
+  font-weight: bold;
+}
+.article-content .article-link img {
+  margin-left: 1.5rem;
+}
+
+.module-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+}
+
+.slide {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  gap: 1rem;
+  width: 25%;
+  padding: 0;
+  margin: auto;
+  margin-top: 5rem;
+}
+.slide .slide-link {
+  text-align: center;
+  color: #FD7E37;
+  border: solid 0.2rem #FD7E37;
+  border-radius: 0.5rem;
+}
+.slide .slide-link:not(.arrow) {
+  padding: 0.5rem 1.5rem;
+}
+.slide .slide-link:hover {
+  background-color: #FD7E37;
+  color: white;
+}
+.slide .arrow {
+  padding: 0.5rem 0.5rem;
+}
+
+footer {
+  background-color: #FD7E37;
+  padding: 4rem 0;
+}
+footer .footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contact {
+  line-height: 3.6rem;
+  color: white;
+}
+.contact .contact-title {
+  font-weight: 600;
+}
+
+.mention {
+  font-size: 1.6rem;
+}
+.mention .politique {
+  margin-left: 2rem;
+}
+
+.network {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 3rem;
+}
+
+.etudiant, .actu, .module {
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+}
+
+.module-desc {
+  font-size: 2.4rem;
+  line-height: 3.6rem;
+  font-weight: 600;
+  padding: 0 16rem;
+  margin-bottom: 5rem;
+}
+
+/*# sourceMappingURL=formation.css.map */
