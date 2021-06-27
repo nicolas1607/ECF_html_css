@@ -620,7 +620,7 @@ footer .footer {
   gap: 3rem;
 }
 
-.etudiant, .actu, .module {
+.etudiant, .actu, .module, .form-contact {
   padding-top: 8rem;
   padding-bottom: 8rem;
 }
@@ -698,7 +698,7 @@ footer .footer {
   gap: 3rem;
 }
 
-.etudiant, .actu, .module {
+.etudiant, .actu, .module, .form-contact {
   padding-top: 8rem;
   padding-bottom: 8rem;
 }
