@@ -1,0 +1,21 @@
+.return{
+    position: absolute;
+    align-items: center;
+    border: solid 1px #FD7E37;
+    border-radius: 2rem;
+    padding: .5rem 1rem;
+    .return-img{
+        transform: rotate(180deg);
+        width: 3rem;
+    }
+    .return-desc{
+        color: black;
+        font-size: 1.5rem;
+    }
+    &:hover{
+        background-color: #FD7E37;
+        .return-desc{
+            color: white;
+        }
+    }
+} 

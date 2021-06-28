@@ -256,66 +256,10 @@ h2 {
   color: white;
 }
 
-.etudiant {
-  background-color: #FD7E37;
-  color: white;
-}
-.etudiant .etudiants {
-  display: flex;
-  justify-content: space-between;
-}
-
-.etu-content {
-  text-align: center;
-  display: flex;
-  justify-content: space-between;
-  flex-direction: column;
-}
-.etu-content .etu-name {
-  margin-top: 2rem;
-  font-size: 2.4rem;
-  line-height: 3.6rem;
-  font-weight: 600;
-}
-.etu-content .etu-link {
-  font-size: 1.6rem;
-  line-height: 2.4rem;
-  border: solid 1px white;
-  width: 65%;
-  margin: auto;
-  margin-top: 2rem;
-  padding: 0.5rem 0;
-  border-radius: 1rem;
-}
-.etu-content .etu-link:hover {
-  background-color: white;
-  color: #FD7E37;
-}
-
-.slide {
+.actu-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  gap: 1rem;
-  width: 25%;
-  padding: 0;
-  margin: auto;
-  margin-top: 5rem;
-}
-.slide .slide-link {
-  text-align: center;
-  color: #FD7E37;
-  border: solid 0.2rem #FD7E37;
-  border-radius: 0.5rem;
-}
-.slide .slide-link:not(.arrow) {
-  padding: 0.5rem 1.5rem;
-}
-.slide .slide-link:hover {
-  background-color: #FD7E37;
-  color: white;
-}
-.slide .arrow {
-  padding: 0.5rem 0.5rem;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 3rem;
 }
 
 footer {
@@ -354,36 +298,31 @@ footer .footer {
   padding-bottom: 8rem;
 }
 
-.etu {
+.article {
   position: relative;
 }
 
-.etudiant {
-  background-color: white;
-  color: black;
-}
-.etudiant .etu-img {
-  width: 25%;
+.actu-img {
   margin: auto;
+  width: 80%;
 }
-.etudiant .etu-name {
-  font-size: 4.8rem;
+
+.article-content {
+  margin-bottom: 0;
+}
+.article-content .actu-name {
   margin-top: 5rem;
-  margin-bottom: 8rem;
+}
+.article-content .article-time {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.article-content .article-time .article-datetime {
+  margin-left: 1rem;
+}
+.article-content .actu-text {
+  margin-top: 5rem;
 }
 
-.etu-table {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  gap: 5rem;
-}
-.etu-table .detail-name {
-  font-size: 2.4rem;
-  font-weight: 600;
-  margin-bottom: 2rem;
-}
-.etu-table .etu-detail-desc {
-  grid-area: 3/1/4/5;
-}
-
-/*# sourceMappingURL=etudiant.css.map */
+/*# sourceMappingURL=actu.css.map */

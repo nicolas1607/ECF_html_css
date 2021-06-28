@@ -1,0 +1,37 @@
+@import 'reset';
+@import 'helpers';
+@import 'layout';
+@import 'generique';
+@import 'typo';
+@import 'nav';
+@import 'return';
+@import 'actualites';
+@import 'footer';
+@import 'important';
+
+.article{
+    position: relative;
+}
+
+.actu-img{
+    margin: auto;
+    width: 80%;
+}
+
+.article-content{
+    margin-bottom: 0;
+    .actu-name{
+        margin-top: 5rem;
+    }
+    .article-time{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .article-datetime{
+            margin-left: 1rem;
+        }
+    }
+    .actu-text{
+        margin-top: 5rem;
+    }
+}
