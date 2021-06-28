@@ -234,54 +234,40 @@ h2 {
   opacity: 0.5;
 }
 
-.actu-article {
-  box-shadow: 1px 1px 5px lightgray;
-  position: relative;
-}
-.actu-article:hover {
-  box-shadow: 5px 5px 5px 3px lightgray;
-  transform: translateY(-1rem);
-}
-
-.article-img {
-  width: 100%;
-}
-
-.article-content {
-  padding: 2rem;
-  margin-bottom: 5rem;
-}
-.article-content .article-time, .article-content .article-name, .article-content .article-text, .article-content .article-link {
-  margin-top: 2rem;
-}
-.article-content .article-time {
-  display: flex;
-  align-items: center;
-}
-.article-content .article-time .article-datetime {
-  margin-left: 1rem;
-}
-.article-content .article-link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
+.etudiant {
   background-color: #FD7E37;
-  padding: 1rem;
-  margin: 0;
-  font-weight: bold;
+  color: white;
 }
-.article-content .article-link img {
-  margin-left: 1.5rem;
+.etudiant .etudiants {
+  display: flex;
+  justify-content: space-between;
 }
 
-.module-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 3rem;
+.etu-content {
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.etu-content .etu-name {
+  margin-top: 2rem;
+  font-size: 2.4rem;
+  line-height: 3.6rem;
+  font-weight: 600;
+}
+.etu-content .etu-link {
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  border: solid 1px white;
+  width: 65%;
+  margin: auto;
+  margin-top: 2rem;
+  padding: 0.5rem 0;
+  border-radius: 1rem;
+}
+.etu-content .etu-link:hover {
+  background-color: white;
+  color: #FD7E37;
 }
 
 .slide {
@@ -346,12 +332,61 @@ footer .footer {
   padding-bottom: 8rem;
 }
 
-.module-desc {
-  font-size: 2.4rem;
-  line-height: 3.6rem;
-  font-weight: 600;
-  padding: 0 16rem;
-  margin-bottom: 5rem;
+.etu {
+  position: relative;
 }
 
-/*# sourceMappingURL=formation.css.map */
+.return {
+  position: absolute;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  gap: 0.5rem;
+  align-items: center;
+  border: solid 1px #FD7E37;
+  border-radius: 2rem;
+  padding: 0.5rem 1rem;
+}
+.return .return-img {
+  transform: rotate(180deg);
+  width: 3rem;
+}
+.return .return-desc {
+  color: black;
+  font-size: 1.5rem;
+}
+.return:hover {
+  background-color: #FD7E37;
+}
+.return:hover .return-desc {
+  color: white;
+}
+
+.etudiant {
+  background-color: white;
+  color: black;
+}
+.etudiant .etu-img {
+  width: 25%;
+  margin: auto;
+}
+.etudiant .etu-name {
+  font-size: 4.8rem;
+  margin-top: 5rem;
+  margin-bottom: 8rem;
+}
+
+.etu-table {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 5rem;
+}
+.etu-table .detail-name {
+  font-size: 2.4rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+.etu-table .etu-detail-desc {
+  grid-area: 3/1/4/5;
+}
+
+/*# sourceMappingURL=etudiant.css.map */
