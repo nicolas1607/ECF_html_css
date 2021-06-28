@@ -341,7 +341,7 @@ footer .footer {
   gap: 3rem;
 }
 
-.etudiant, .actu, .module, .form-contact, .politique {
+.etudiant, .actu, .module, .form-contact, .politique, .hero-content {
   padding-top: 8rem;
   padding-bottom: 8rem;
 }

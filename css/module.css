@@ -257,9 +257,9 @@ h2 {
   color: white;
 }
 
-.actu-grid {
+.module-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
   gap: 3rem;
 }
 
@@ -299,31 +299,32 @@ footer .footer {
   padding-bottom: 8rem;
 }
 
-.article {
+.hero {
+  z-index: -1;
   position: relative;
 }
-
-.actu-img {
-  margin: auto;
-  width: 80%;
+.hero .hero-img {
+  width: 100%;
+  height: 50%;
+  margin-top: -30rem;
 }
-
-.article-content {
-  margin-bottom: 0;
-}
-.article-content .actu-name {
-  margin-top: 5rem;
-}
-.article-content .article-time {
+.hero .hero-text {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.article-content .article-time .article-datetime {
-  margin-left: 1rem;
-}
-.article-content .actu-text {
-  margin-top: 5rem;
+.hero .hero-text .hero-title {
+  color: white;
+  position: absolute;
+  bottom: 15%;
 }
 
-/*# sourceMappingURL=actu.css.map */
+.hero-desc {
+  font-weight: 600;
+}
+
+.return {
+  margin-top: 40rem;
+}
+
+/*# sourceMappingURL=module.css.map */

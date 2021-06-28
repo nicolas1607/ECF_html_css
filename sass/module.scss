@@ -1,0 +1,42 @@
+@import 'reset';
+@import 'helpers';
+@import 'layout';
+@import 'generique';
+@import 'typo';
+@import 'nav';
+@import 'return';
+@import '_module';
+@import 'footer';
+@import 'important';
+
+.module-section{
+    // position: relative;
+}
+
+.hero{
+    z-index: -1;
+    position: relative;
+    .hero-img{
+        width: 100%;
+        height: 50%;
+        margin-top: -30rem;
+    }
+    .hero-text{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .hero-title{
+            color: white;
+            position: absolute;
+            bottom: 15%;
+        }
+    }
+}
+
+.hero-desc{
+    font-weight: 600;
+}
+
+.return{
+    margin-top: 40rem;
+}
