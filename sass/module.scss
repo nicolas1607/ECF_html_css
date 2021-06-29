@@ -4,13 +4,14 @@
 @import 'generique';
 @import 'typo';
 @import 'nav';
+@import 'menu-burger';
 @import 'return';
 @import '_module';
 @import 'footer';
 @import 'important';
 
 .module-section{
-    // position: relative;
+    position: relative;
 }
 
 .hero{
@@ -18,8 +19,28 @@
     position: relative;
     .hero-img{
         width: 100%;
-        height: 50%;
-        margin-top: -30rem;
+        height: 25%;
+        margin-top: 0rem;
+    }
+    @media screen and (min-width: 576px) {
+        .hero-img{
+            margin-top: -5rem;
+        }
+    }
+    @media screen and (min-width: 776px) {
+        .hero-img{
+            margin-top: -10rem;
+        }
+    }
+    @media screen and (min-width: 992px) {
+        .hero-img{
+            margin-top: -20rem;
+        }
+    }
+    @media screen and (min-width: 1200px) {
+        .hero-img{
+            margin-top: -30rem;
+        }
     }
     .hero-text{
         display: flex;
@@ -35,8 +56,60 @@
 
 .hero-desc{
     font-weight: 600;
+    padding: 0 4rem;
 }
 
 .return{
-    margin-top: 40rem;
+    margin-top: 5rem;
+}
+
+h1{
+    font-size: 2.5rem;
+    top: 40%;
+}
+
+@media screen and (min-width: 430px) {
+    h1{
+        font-size: 3.8rem;
+    }
+}
+
+@media screen and (min-width: 576px) {
+    h1{
+        top: 50%;
+    }
+}
+
+
+@media screen and (min-width: 776px) {
+    .return{
+        margin-top: 20rem;
+    }
+    h1{
+        top: 60%;
+    }
+    .hero-desc{
+        padding: 8rem 8rem;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .return{
+        margin-top: 30rem;
+    }
+    h1{
+        top: 70%;
+    }
+    .hero-desc{
+        padding: 8rem 16rem;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .return{
+        margin-top: 40rem;
+    }
+    h1{
+        top: 80%;
+    }
 }

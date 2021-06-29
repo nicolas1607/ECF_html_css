@@ -154,21 +154,18 @@ address {
   }
 }
 .container {
-  width: 100%;
-  padding: 0 16rem;
+  padding: 0 4rem;
 }
 
-@media screen and (min-width: 36em) {
-  /* Indiquer les mesures en em avec une base de 16px - Ex : 576/16 = 36em*/
+@media screen and (min-width: 576px) {
+  .container {
+    padding: 0 8rem;
+  }
 }
-@media screen and (min-width: 48em) {
-  /* eq 768px */
-}
-@media screen and (min-width: 62em) {
-  /* eq 992px */
-}
-@media screen and (min-width: 75em) {
-  /* eq 1200px */
+@media screen and (min-width: 1200px) {
+  .container {
+    padding: 0 16rem;
+  }
 }
 a {
   text-decoration: none;
@@ -190,7 +187,7 @@ h1, h2, .logo {
 }
 
 h1 {
-  font-size: 4.8rem;
+  font-size: 3.8rem;
   line-height: 4.8rem;
   text-align: center;
   margin-bottom: 5rem;
@@ -202,6 +199,17 @@ h2 {
   line-height: 3.6rem;
 }
 
+h3 {
+  font-weight: 600;
+  font-size: 2.4rem;
+  line-height: 3.6rem;
+}
+
+@media screen and (min-width: 992px) {
+  h1 {
+    font-size: 4.8rem;
+  }
+}
 .nav {
   background-color: #FD7E37;
 }
@@ -234,285 +242,78 @@ h2 {
   opacity: 0.5;
 }
 
-.actu-article {
-  box-shadow: 1px 1px 5px lightgray;
-  position: relative;
-}
-.actu-article:hover {
-  box-shadow: 5px 5px 5px 3px lightgray;
-  transform: translateY(-1rem);
-}
-
-.article-img {
-  width: 100%;
+/* Navigation */
+.toggle-menu {
+  padding: 0.25rem 1rem;
+  background-color: #FD7E37;
+  border: none;
+  transition: 0.3s;
 }
 
-.article-content {
-  padding: 2rem;
-  margin-bottom: 5rem;
+.toggle-menu img {
+  width: 4rem;
+  padding: 0;
+  margin-top: 1rem;
 }
-.article-content .article-time, .article-content .article-name, .article-content .article-text, .article-content .article-link {
-  margin-top: 2rem;
-}
-.article-content .article-time {
-  display: flex;
-  align-items: center;
-}
-.article-content .article-time .article-datetime {
-  margin-left: 1rem;
-}
-.article-content .article-link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+
+.menu {
+  z-index: 100;
   position: absolute;
-  bottom: 0;
+  top: 6rem;
   left: 0;
   right: 0;
-  background-color: #FD7E37;
-  padding: 1rem;
-  margin: 0;
-  font-weight: bold;
-}
-.article-content .article-link img {
-  margin-left: 1.5rem;
+  background-color: var(--accent);
+  transition: 0.5s;
+  flex-direction: column;
 }
 
-/* Box sizing rules */
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
-/* Remove default margin */
-body,
-h1,
-h2,
-h3,
-h4,
-p,
-figure,
-blockquote,
-dl,
-dd {
-  margin: 0;
-}
-
-/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
-ul[role=list],
-ol[role=list] {
-  list-style: none;
-}
-
-/* Set core root defaults */
-html:focus-within {
-  scroll-behavior: smooth;
-}
-
-/* Set core body defaults */
-body {
-  min-height: 100vh;
-  text-rendering: optimizeSpeed;
-  line-height: 1.5;
-}
-
-/* A elements that don't have a class get default styles */
-a:not([class]) {
-  text-decoration-skip-ink: auto;
-}
-
-/* Make images easier to work with */
-img,
-picture {
-  max-width: 100%;
-  display: block;
-}
-
-/* Inherit fonts for inputs and buttons */
-input,
-button,
-textarea,
-select {
-  font: inherit;
-}
-
-/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
-@media (prefers-reduced-motion: reduce) {
-  html:focus-within {
-    scroll-behavior: auto;
-  }
-
-  *,
-*::before,
-*::after {
-    animation-duration: 0.01ms !important;
-    animation-iteration-count: 1 !important;
-    transition-duration: 0.01ms !important;
-    scroll-behavior: auto !important;
+@media screen and (min-width: 680px) {
+  .menu {
+    display: flex;
+    flex-direction: row;
   }
 }
-/* Débuggueur CSS  */
-* {
-  /* outline: 1px solid red; */
-}
-
-html {
-  font-size: 0.625em;
-  /* fallback IE8+ */
-  font-size: calc(1em * .625);
-  /* IE9-IE11 math fixing. See http://bit.ly/1g4X0bX */
-}
-
-/* Remove focus for mouse users */
-:focus:not(:focus-visible) {
-  outline: none;
-}
-
-/* Set core body defaults */
-body {
-  font-size: 1.6rem;
-}
-
-/* Set text selection */
-::-moz-selection {
-  color: #000;
-  background-color: #fd0;
-}
-
-::selection {
-  color: #000;
-  background-color: #fd0;
-}
-
-/* Remove default padding */
-[role=list] {
-  margin: 0;
-  padding: 0;
-}
-
-/* Set cursor pointer */
-label[for],
-button,
-input[type=submit],
-select {
-  cursor: pointer;
-}
-
-/* Remove font style on address */
-address {
-  font-style: normal;
-}
-
-/* Text meant only for screen readers. */
-.screen-reader-text {
-  clip: rect(1px, 1px, 1px, 1px);
-  height: 1px;
-  overflow: hidden;
-  width: 1px;
-  position: absolute;
-  white-space: nowrap;
-}
-
-/* Image replacement technique 2012 H5BP  - https://css-tricks.com/the-image-replacement-museum/ */
-.ir {
-  font: 0/0 a;
-  color: transparent;
-  border: 0;
-  text-shadow: none;
-}
-
-/* Print external URLs */
-@media print {
-  a {
-    text-decoration: underline;
-  }
-
-  a[href]:not([href^="#"])::after {
-    content: "(" attr(href) ")";
-  }
-}
-.container {
-  width: 100%;
-  padding: 0 16rem;
-}
-
-@media screen and (min-width: 36em) {
-  /* Indiquer les mesures en em avec une base de 16px - Ex : 576/16 = 36em*/
-}
-@media screen and (min-width: 48em) {
-  /* eq 768px */
-}
-@media screen and (min-width: 62em) {
-  /* eq 992px */
-}
-@media screen and (min-width: 75em) {
-  /* eq 1200px */
-}
-a {
-  text-decoration: none;
-  color: white;
-}
-
-body {
-  font-family: Montserrat, sans-serif;
-  font-size: 2rem;
-  line-height: 3rem;
-}
-
-h1, h2, h3, h4, .logo {
-  font-family: Raleway, sans-serif;
-}
-
-h1, h2, .logo {
-  font-weight: bold;
-}
-
-h1 {
-  font-size: 4.8rem;
-  line-height: 4.8rem;
-  text-align: center;
-  margin-bottom: 5rem;
-}
-
-h2 {
-  font-weight: 600;
-  font-size: 2.4rem;
-  line-height: 3.6rem;
-}
-
-.nav {
+#menu {
   background-color: #FD7E37;
 }
-.nav, .nav .nav-list {
+
+.menu[hidden] {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding-left: 0 5rem;
-}
-.nav .logo {
-  font-size: 4rem;
-  color: white;
-  margin: 2rem 0;
+  visibility: hidden;
 }
 
-.nav-link {
-  font-weight: 600;
-  line-height: 2.4rem;
-  text-align: center;
-  padding: 1rem;
-  font-size: 1.5rem;
+.menu:not([hidden]) {
+  transform: translateX(0);
 }
 
-.nav-item a:not(#active):hover {
-  background-color: white;
-  color: #FD7E37;
+.menu-link {
+  display: block;
+  padding: 1.6rem;
+  font-size: 1.4rem;
+  line-height: 1.2;
+  color: #fff;
+  text-decoration: none;
+  transition: 0.3s;
 }
 
-.active a {
-  opacity: 0.5;
+.menu-link:hover,
+.menu-link:focus {
+  background-color: rgba(0, 0, 0, 0.25);
 }
 
+@media screen and (min-width: 992px) {
+  .toggle-menu {
+    display: none;
+  }
+
+  .menu,
+.menu[hidden] {
+    display: flex;
+    visibility: visible;
+    position: static;
+    transform: translateX(0);
+  }
+}
 .actu-article {
   box-shadow: 1px 1px 5px lightgray;
   position: relative;
@@ -559,79 +360,42 @@ h2 {
 
 .actu-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr;
   gap: 3rem;
 }
 
-.slide {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  gap: 1rem;
-  width: 25%;
-  padding: 0;
-  margin: auto;
-  margin-top: 5rem;
+@media screen and (min-width: 776px) {
+  .actu-grid {
+    grid-template-columns: 1fr 1fr;
+  }
 }
-.slide .slide-link {
-  text-align: center;
-  color: #FD7E37;
-  border: solid 0.2rem #FD7E37;
-  border-radius: 0.5rem;
+@media screen and (min-width: 992px) {
+  .actu-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }
-.slide .slide-link:not(.arrow) {
-  padding: 0.5rem 1.5rem;
-}
-.slide .slide-link:hover {
-  background-color: #FD7E37;
-  color: white;
-}
-.slide .arrow {
-  padding: 0.5rem 0.5rem;
-}
-
-footer {
-  background-color: #FD7E37;
-  padding: 4rem 0;
-}
-footer .footer {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.contact {
-  line-height: 3.6rem;
-  color: white;
-}
-.contact .contact-title {
-  font-weight: 600;
-}
-
-.mention {
-  font-size: 1.6rem;
-}
-.mention .politique {
-  margin-left: 2rem;
-}
-
-.network {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 3rem;
-}
-
-.etudiant, .actu, .module, .form-contact, .politique, .hero-content {
-  padding-top: 8rem;
-  padding-bottom: 8rem;
-}
-
 .etudiant {
   background-color: #FD7E37;
   color: white;
 }
 .etudiant .etudiants {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 4rem;
+}
+@media screen and (min-width: 576px) {
+  .etudiant .etudiants {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media screen and (min-width: 992px) {
+  .etudiant .etudiants {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
+.etu-img {
+  margin: auto;
 }
 
 .etu-content {
@@ -663,18 +427,35 @@ footer .footer {
 
 .module-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   gap: 3rem;
 }
 
+@media screen and (min-width: 992px) {
+  .module-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+  }
+}
 footer {
   background-color: #FD7E37;
   padding: 4rem 0;
 }
 footer .footer {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
   align-items: center;
+  text-align: center;
+}
+@media screen and (min-width: 992px) {
+  footer .footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+  }
 }
 
 .contact {
@@ -686,41 +467,67 @@ footer .footer {
 }
 
 .mention {
+  display: flex;
+  flex-direction: column;
   font-size: 1.6rem;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
 }
-.mention .politique {
+.mention .politique-conf {
+  margin-left: 2rem;
+}
+.mention .mention-legale {
   margin-left: 2rem;
 }
 
+@media screen and (min-width: 1200px) {
+  .mention {
+    margin-top: 0;
+    margin-bottom: 0;
+    flex-direction: row;
+    align-items: center;
+  }
+  .mention .mention-legale {
+    margin-left: 0;
+  }
+}
 .network {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 3rem;
 }
 
-.etudiant, .actu, .module, .form-contact, .politique, .hero-content {
+.etudiant, .actu, .module, .form-contact, .politique, .mention .hero-content, .article {
   padding-top: 8rem;
   padding-bottom: 8rem;
 }
 
 h1 {
-  font-size: 5.2rem;
+  font-size: 3.2rem;
   line-height: 7.6rem;
 }
 
 h2 {
-  font-size: 4.8rem;
+  font-size: 3.8rem;
   line-height: 4.8rem;
   text-align: center;
   margin-bottom: 5rem;
 }
 
-h3 {
-  font-weight: 600;
-  font-size: 2.4rem;
-  line-height: 3.6rem;
+@media screen and (min-width: 576px) {
+  h1 {
+    font-size: 4.2rem;
+  }
 }
+@media screen and (min-width: 992px) {
+  h1 {
+    font-size: 5.2rem;
+  }
 
+  h2 {
+    font-size: 4.8rem;
+  }
+}
 /* Hero */
 .hero {
   background-image: url("../img/Photo arrière-plan.png");
@@ -729,25 +536,49 @@ h3 {
 }
 
 .hero-welcome {
-  width: 75rem;
-  height: 30rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 75rem;
   background-color: #00000080;
   opacity: 1;
   position: absolute;
-  bottom: 10%;
-  right: 10%;
+  top: 20%;
   color: white;
   padding: 3rem;
+  margin-right: 2rem;
 }
 
 .hero-link {
   padding: 1rem 2rem;
   background-color: #FD7E37;
-  position: absolute;
-  right: 3rem;
-  bottom: 3rem;
+  position: static;
+  margin: auto;
   line-height: 3.6rem;
   font-weight: 600;
+  text-align: center;
+}
+
+@media screen and (min-width: 576px) {
+  .hero-welcome {
+    position: absolute;
+    margin-right: 8rem;
+  }
+}
+@media screen and (min-width: 992px) {
+  .hero-welcome {
+    max-height: 50rem;
+    position: absolute;
+    top: 40%;
+    right: 5%;
+  }
+
+  .hero-link {
+    position: absolute;
+    right: 3rem;
+    bottom: 3rem;
+    text-align: left;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

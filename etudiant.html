@@ -17,11 +17,15 @@
 
         <header>
             
-            <nav class="nav container">
+            <nav id="navigation" class="main-nav nav container navigation">
 
                 <a href="index.html" class="logo">DWWM</a>
 
-                <ul class="nav-list" role="list">
+                <button class="toggle-menu" aria-expanded="false" aria-controls="menu">
+                    <img src="img/noun_menu_4026080.svg" alt="Menu Burger">
+                </button>
+
+                <ul id="menu" class="menu nav-list" role="list" hidden>
 
                     <li class="nav-item ">
                         <a href="index.html" class="nav-link">ACCUEIL</a>
@@ -54,93 +58,89 @@
             <!-- Rencontrez les étudiants -->
             <section class="etudiant container">
 
-                <div class="etudiants">
+                <div class="etu">
 
-                    <div class="etu">
+                    <a href="javascript:history.back()" class="return">
+                        <img src="img/Icon feather-arrow-right-circle-1.svg" alt="Page précdecent" class="return-img">
+                    </a>
 
-                        <a href="javascript:history.back()" class="return">
-                            <img src="img/Icon feather-arrow-right-circle-1.svg" alt="Page précdecent" class="return-img">
-                        </a>
+                    <img src="img/Photo-2.png" alt="Photo de Francine Auhi" class="etu-img">
 
-                        <img src="img/Photo-2.png" alt="Photo de Francine Auhi" class="etu-img">
+                    <div class="etu-content">
+                        <h1 class="etu-name">Francine Auhi</h1>
+                    </div>
 
-                        <div class="etu-content">
-                            <h1 class="etu-name">Francine Auhi</h1>
+                    <div class="etu-table">
+
+                        <div class="etu-detail">
+
+                            <p class="detail-name">Son film</p>
+
+                            <p class="detail-desc">Lorem ipsum dolor sit amet Lorem ipsum</p>
+
                         </div>
 
-                        <div class="etu-table">
+                        <div class="etu-detail">
 
-                            <div class="etu-detail">
+                            <p class="detail-name">Sa série</p>
 
-                                <p class="detail-name">Son film</p>
+                            <p class="detail-desc">Lorem ipsum dolor sit amet Lorem ipsum</p>
 
-                                <p class="detail-desc">Lorem ipsum dolor sit amet Lorem ipsum</p>
+                        </div>
 
-                            </div>
+                        <div class="etu-detail">
 
-                            <div class="etu-detail">
+                            <p class="detail-name">Son jeu vidéo</p>
 
-                                <p class="detail-name">Sa série</p>
+                            <p class="detail-desc">Lorem ipsum dolor sit amet Lorem ipsum</p>
 
-                                <p class="detail-desc">Lorem ipsum dolor sit amet Lorem ipsum</p>
+                        </div>
 
-                            </div>
+                        <div class="etu-detail">
 
-                            <div class="etu-detail">
+                            <p class="detail-name">Son héros / héroïne</p>
 
-                                <p class="detail-name">Son jeu vidéo</p>
+                            <p class="detail-desc">Lorem ipsum dolor sit amet Lorem ipsum</p>
 
-                                <p class="detail-desc">Lorem ipsum dolor sit amet Lorem ipsum</p>
+                        </div>
 
-                            </div>
+                        <div class="etu-detail">
 
-                            <div class="etu-detail">
+                            <p class="detail-name">Son livre</p>
 
-                                <p class="detail-name">Son héros / héroïne</p>
+                            <p class="detail-desc">Lorem ipsum dolor sit amet Lorem ipsum</p>
 
-                                <p class="detail-desc">Lorem ipsum dolor sit amet Lorem ipsum</p>
+                        </div>
 
-                            </div>
+                        <div class="etu-detail">
 
-                            <div class="etu-detail">
+                            <p class="detail-name">Sa chanson</p>
 
-                                <p class="detail-name">Son livre</p>
+                            <p class="detail-desc">Lorem ipsum dolor sit amet Lorem ipsum</p>
 
-                                <p class="detail-desc">Lorem ipsum dolor sit amet Lorem ipsum</p>
+                        </div>
 
-                            </div>
+                        <div class="etu-detail">
 
-                            <div class="etu-detail">
+                            <p class="detail-name">Son application</p>
 
-                                <p class="detail-name">Sa chanson</p>
+                            <p class="detail-desc">Lorem ipsum dolor sit amet Lorem ipsum</p>
 
-                                <p class="detail-desc">Lorem ipsum dolor sit amet Lorem ipsum</p>
+                        </div>
 
-                            </div>
+                        <div class="etu-detail">
 
-                            <div class="etu-detail">
+                            <p class="detail-name">Son site web</p>
 
-                                <p class="detail-name">Son application</p>
+                            <p class="detail-desc">Lorem ipsum dolor sit amet Lorem ipsum</p>
 
-                                <p class="detail-desc">Lorem ipsum dolor sit amet Lorem ipsum</p>
+                        </div>
 
-                            </div>
+                        <div class="etu-detail etu-detail-desc">
 
-                            <div class="etu-detail">
+                            <p class="detail-name">En deux mots</p>
 
-                                <p class="detail-name">Son site web</p>
-
-                                <p class="detail-desc">Lorem ipsum dolor sit amet Lorem ipsum</p>
-
-                            </div>
-
-                            <div class="etu-detail etu-detail-desc">
-
-                                <p class="detail-name">En deux mots</p>
-
-                                <p class="detail-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem repellat rem, doloribus repellendus eos aliquam debitis placeat dignissimos! Consectetur, suscipit modi architecto a rem eum aliquid. Reprehenderit obcaecati, ullam asperiores soluta deserunt placeat porro eius debitis consectetur minus quia quaerat !</p>
-
-                            </div>
+                            <p class="detail-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem repellat rem, doloribus repellendus eos aliquam debitis placeat dignissimos! Consectetur, suscipit modi architecto a rem eum aliquid. Reprehenderit obcaecati, ullam asperiores soluta deserunt placeat porro eius debitis consectetur minus quia quaerat !</p>
 
                         </div>
 
@@ -172,7 +172,7 @@
     
                     <a href="mentions-legales.html" class="mention-legale">Mentions légales</a>
                     
-                    <a href="politique-confidentialite.html" class="politique">Politique de confidentialité</a>
+                    <a href="politique-confidentialite.html" class="politique-conf">Politique de confidentialité</a>
     
                 </div>
     
@@ -196,7 +196,7 @@
             
         </footer>
 
-        <!-- <script src=""></script> -->
+        <script src="js/burger-menu.js"></script>
 
     </body>
 

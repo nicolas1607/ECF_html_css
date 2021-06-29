@@ -17,30 +17,34 @@
 
         <header>
             
-            <nav class="nav container">
+            <nav id="navigation" class="main-nav nav container navigation">
 
                 <a href="index.html" class="logo">DWWM</a>
 
-                <ul class="nav-list" role="list">
+                <button class="toggle-menu" aria-expanded="false" aria-controls="menu">
+                    <img src="img/noun_menu_4026080.svg" alt="Menu Burger">
+                </button>
 
-                    <li class="nav-item active">
-                        <a href="index.html" id="active" class="nav-link">ACCUEIL</a>
+                <ul id="menu" class="menu nav-list" role="list" hidden>
+
+                    <li class="nav-item active menu-item">
+                        <a href="index.html" id="active" class="menu-link nav-link">ACCUEIL</a>
                     </li>
 
-                    <li class="nav-item">
-                        <a href="formation.html" class="nav-link">LA FORMATION</a>
+                    <li class="nav-item menu-item">
+                        <a href="formation.html" class="menu-link nav-link">LA FORMATION</a>
                     </li>
 
-                    <li class="nav-item">
-                        <a href="etudiants.html" class="nav-link">LES ÉTUDIANTS</a>
+                    <li class="nav-item menu-item">
+                        <a href="etudiants.html" class="menu-link nav-link">LES ÉTUDIANTS</a>
                     </li>
 
-                    <li class="nav-item">
-                        <a href="actualite.html" class="nav-link">ACTUALITÉS</a>
+                    <li class="nav-item menu-item">
+                        <a href="actualite.html" class="menu-link nav-link">ACTUALITÉS</a>
                     </li>
 
-                    <li class="nav-item">
-                        <a href="contact.html" class="nav-link">NOUS CONTACTER</a>
+                    <li class="nav-item menu-item">
+                        <a href="contact.html" class="menu-link nav-link">NOUS CONTACTER</a>
                     </li>
 
                 </ul>
@@ -286,7 +290,7 @@
     
                     <a href="mentions-legales.html" class="mention-legale">Mentions légales</a>
                     
-                    <a href="politique-confidentialite.html" class="politique">Politique de confidentialité</a>
+                    <a href="politique-confidentialite.html" class="politique-conf">Politique de confidentialité</a>
     
                 </div>
     
@@ -310,7 +314,7 @@
             
         </footer>
 
-        <!-- <script src=""></script> -->
+        <script src="js/burger-menu.js"></script>
 
     </body>
 

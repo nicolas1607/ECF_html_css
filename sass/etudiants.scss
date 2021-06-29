@@ -4,6 +4,7 @@
 @import 'generique';
 @import 'typo';
 @import 'nav';
+@import 'menu-burger';
 @import '_etudiant';
 @import 'slide';
 @import 'footer';
@@ -14,8 +15,18 @@
     color: black;
     .etudiants{
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr;
         gap: 5rem;
+    }
+    @media screen and (min-width: 576px) {
+        .etudiants{
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+    @media screen and (min-width: 1000px) {
+        .etudiants{
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+        }
     }
     .etu-link{
         border: solid 2px #FD7E37;
@@ -26,3 +37,4 @@
         }
     }
 }
+

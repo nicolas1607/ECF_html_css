@@ -3,8 +3,18 @@ footer{
     padding: 4rem 0;
     .footer{
         display: flex;
-        justify-content: space-between;
+        flex-direction: column;
         align-items: center;
+        text-align: center;
+    }
+    @media screen and (min-width: 992px) {
+        .footer{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            text-align: left;
+        }
     }
 }
 
@@ -17,9 +27,25 @@ footer{
 }
 
 .mention{
+    display: flex;
+    flex-direction: column;
     font-size: 1.6rem;
-    .politique{
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    .politique-conf{
         margin-left: 2rem;
+    }
+    .mention-legale{
+        margin-left: 2rem;
+    }
+}
+@media screen and (min-width: 1200px) {
+    .mention{
+        margin-top: 0;
+        margin-bottom: 0;
+        flex-direction: row;
+        align-items: center;
+        .mention-legale{margin-left: 0;}
     }
 }
 

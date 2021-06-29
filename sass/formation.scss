@@ -4,6 +4,7 @@
 @import 'generique';
 @import 'typo';
 @import 'nav';
+@import 'menu-burger';
 @import 'card';
 @import '_module';
 @import 'slide';
@@ -15,6 +16,24 @@
     font-size: 2.4rem;
     line-height: 3.6rem;
     font-weight: 600;
-    padding: 0 16rem;
+    padding: 0 2rem;
     margin-bottom: 5rem;
+}
+
+@media screen and (min-width: 768) {
+    .module-desc{
+        padding: 0 8rem;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .module-desc{
+        padding: 0 8rem;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .module-desc{
+        padding: 0 16rem;
+    }
 }

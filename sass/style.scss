@@ -4,8 +4,9 @@
 @import 'generique';
 @import 'typo';
 @import 'nav';
+@import 'menu-burger';
 @import 'card';
-@import 'actualite';
+@import 'actualites';
 @import '_etudiant';
 @import '_module';
 @import 'footer';
@@ -13,21 +14,30 @@
 
 
 h1{
-    font-size: 5.2rem;
+    font-size: 3.2rem;
     line-height: 7.6rem;
 }
 
 h2{
-    font-size: 4.8rem;
+    font-size: 3.8rem;
     line-height: 4.8rem;
     text-align: center;
     margin-bottom: 5rem;
 }
 
-h3{
-    font-weight: 600;
-    font-size: 2.4rem;
-    line-height: 3.6rem;
+@media screen and (min-width: 576px) {
+    h1{
+        font-size: 4.2rem;
+    } 
+}
+
+@media screen and (min-width: 992px) {
+    h1{
+        font-size: 5.2rem;
+    } 
+    h2{
+        font-size: 4.8rem;
+    }
 }
 
 /* Hero */
@@ -38,23 +48,47 @@ h3{
 }
 
 .hero-welcome{
-    width: 75rem;
-    height: 30rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 75rem;
     background-color: #00000080;
     opacity: 1;
     position: absolute;
-    bottom: 10%;
-    right: 10%;
+    top: 20%;
     color: white;
     padding: 3rem;
+    margin-right: 2rem;
 }
 
 .hero-link{
     padding: 1rem 2rem;
     background-color: #FD7E37;
-    position: absolute;
-    right: 3rem;
-    bottom: 3rem;
+    position: static;
+    margin: auto;
     line-height: 3.6rem;
     font-weight: 600;
+    text-align: center;
+}
+
+@media screen and (min-width: 576px) {
+    .hero-welcome{
+        position: absolute;
+        margin-right: 8rem;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .hero-welcome{
+        max-height: 50rem;
+        position: absolute;
+        top: 40%;
+        right: 5%;
+    }
+    .hero-link{
+        position: absolute;
+        right: 3rem;
+        bottom: 3rem;
+        text-align: left;
+    }
 }

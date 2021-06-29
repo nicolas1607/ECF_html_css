@@ -4,6 +4,7 @@
 @import 'generique';
 @import 'typo';
 @import 'nav';
+@import 'menu-burger';
 @import 'footer';
 @import 'important';
 
@@ -14,7 +15,8 @@
         margin-top: 8rem;
         margin-bottom: 8rem;
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 2fr;
         gap: 2rem;
         .form-label{
             display: flex;
@@ -62,3 +64,4 @@
         }
     }
 }
+

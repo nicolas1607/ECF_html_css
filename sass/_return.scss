@@ -1,7 +1,7 @@
 .return{
+    display: none;
     position: absolute;
-    align-items: center;
-    z-index: 1000;
+    top: 0;
     border: solid 1px #FD7E37;
     border-radius: 2rem;
     padding: .5rem 1rem;
@@ -20,3 +20,9 @@
         }
     }
 } 
+
+@media screen and (min-width: 776px) {
+    .return{
+        display: block;
+    }
+}

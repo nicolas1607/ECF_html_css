@@ -17,11 +17,15 @@
 
         <header>
             
-            <nav class="nav container">
+            <nav id="navigation" class="main-nav nav container navigation">
 
                 <a href="index.html" class="logo">DWWM</a>
 
-                <ul class="nav-list" role="list">
+                <button class="toggle-menu" aria-expanded="false" aria-controls="menu">
+                    <img src="img/noun_menu_4026080.svg" alt="Menu Burger">
+                </button>
+
+                <ul id="menu" class="menu nav-list" role="list" hidden>
 
                     <li class="nav-item">
                         <a href="index.html" class="nav-link">ACCUEIL</a>
@@ -228,7 +232,7 @@
     
                     <a href="mentions-legales.html" class="mention-legale">Mentions légales</a>
                     
-                    <a href="politique-confidentialite.html" class="politique">Politique de confidentialité</a>
+                    <a href="politique-confidentialite.html" class="politique-conf">Politique de confidentialité</a>
     
                 </div>
     
@@ -251,6 +255,8 @@
             </div>
             
         </footer>
+
+        <script src="js/burger-menu.js"></script>
 
         <!-- <script src="node_modules/swiper/swiper-bundle.js"></script>
         <script>

@@ -4,18 +4,19 @@
 @import 'generique';
 @import 'typo';
 @import 'nav';
+@import 'menu-burger';
 @import 'return';
 @import 'actualites';
 @import 'footer';
 @import 'important';
 
-.article{
+.container{
     position: relative;
 }
 
-.actu-img{
+.article-img{
     margin: auto;
-    width: 80%;
+    width: 70%;
 }
 
 .article-content{
@@ -34,4 +35,8 @@
     .actu-text{
         margin-top: 5rem;
     }
+}
+
+.return{
+    margin-top: 7rem;
 }

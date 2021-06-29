@@ -1,5 +1,13 @@
 .module-grid{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     gap: 3rem;
+}
+
+@media screen and (min-width: 992px) {
+    .module-grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 3rem;
+    }
 }

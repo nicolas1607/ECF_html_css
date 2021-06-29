@@ -1,5 +1,17 @@
 .actu-grid{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
     gap: 3rem;
+}
+
+@media screen and (min-width: 776px) {
+    .actu-grid{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .actu-grid{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
 }

@@ -2,9 +2,24 @@
     background-color: #FD7E37;
     color: white;
     .etudiants{
-        display: flex;
-        justify-content: space-between;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 4rem;
     }
+    @media screen and (min-width: 576px) {
+        .etudiants{
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+    @media screen and (min-width: 992px) {
+        .etudiants{
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+        }
+    }
+}
+
+.etu-img{
+    margin: auto;
 }
 
 .etu-content{
@@ -18,7 +33,6 @@
         line-height: 3.6rem;
         font-weight: 600;
     }
-    
     .etu-link{
         font-size: 1.6rem;
         line-height: 2.4rem;

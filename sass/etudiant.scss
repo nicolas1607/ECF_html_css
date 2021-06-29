@@ -4,6 +4,7 @@
 @import 'generique';
 @import 'typo';
 @import 'nav';
+@import 'menu-burger';
 @import 'return';
 @import '_etudiant';
 @import 'slide';
@@ -18,7 +19,6 @@
     background-color: white;
     color: black;
     .etu-img{
-        width: 25%;
         margin: auto;
     }
     .etu-name{
@@ -30,14 +30,29 @@
 
 .etu-table{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
     gap: 5rem;
     .detail-name{
         font-size: 2.4rem;
         font-weight: 600;
         margin-bottom: 2rem;
     }
-    .etu-detail-desc{
-        grid-area: 3/1/4/5;
+}
+
+@media screen and (min-width :576px) {
+    .etu-table{
+        grid-template-columns: 1fr 1fr;
+        .etu-detail-desc{
+            grid-area: 5/1/6/3;
+        }
+    }
+}
+
+@media screen and (min-width :992px) {
+    .etu-table{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        .etu-detail-desc{
+            grid-area: 3/1/4/5;
+        }
     }
 }
