@@ -211,6 +211,7 @@ h3 {
   }
 }
 .nav {
+  z-index: 1000;
   background-color: #FD7E37;
 }
 .nav, .nav .nav-list {
@@ -283,6 +284,7 @@ h3 {
 }
 
 .menu:not([hidden]) {
+  display: flex;
   transform: translateX(0);
 }
 
@@ -421,6 +423,7 @@ footer .footer {
 
 .module-section {
   position: relative;
+  z-index: -100;
 }
 
 .hero {
@@ -465,9 +468,14 @@ footer .footer {
 
 .hero-desc {
   font-weight: 600;
-  padding: 0 4rem;
+  padding: 8rem 4rem;
 }
 
+@media screen and (min-width: 776px) {
+  .hero-desc {
+    padding: 0 4rem;
+  }
+}
 .return {
   margin-top: 5rem;
 }

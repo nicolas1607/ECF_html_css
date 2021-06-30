@@ -41,6 +41,7 @@
 
 
 .menu:not([hidden]) {
+    display: flex;
     transform: translateX(0);
 }
 

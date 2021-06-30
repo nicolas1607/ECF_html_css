@@ -211,6 +211,7 @@ h3 {
   }
 }
 .nav {
+  z-index: 1000;
   background-color: #FD7E37;
 }
 .nav, .nav .nav-list {
@@ -283,6 +284,7 @@ h3 {
 }
 
 .menu:not([hidden]) {
+  display: flex;
   transform: translateX(0);
 }
 

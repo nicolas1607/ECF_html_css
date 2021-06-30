@@ -12,6 +12,7 @@
 
 .module-section{
     position: relative;
+    z-index: -100;
 }
 
 .hero{
@@ -56,7 +57,13 @@
 
 .hero-desc{
     font-weight: 600;
-    padding: 0 4rem;
+    padding: 8rem 4rem;
+}
+
+@media screen and (min-width: 776px) {
+    .hero-desc{
+        padding: 0 4rem;
+    }
 }
 
 .return{

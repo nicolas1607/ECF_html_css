@@ -10,6 +10,5 @@ toggleMenu.addEventListener('click', function () {
 
   if (menu.hidden) {
     menu.querySelector('a').focus();
-    menu.style.display = "none";
   }
 });
