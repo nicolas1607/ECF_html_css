@@ -43,8 +43,17 @@ h2{
 /* Hero */
 .hero{
     background-image: url("../img/Photo\ arrière-plan.png");
+    background-repeat: no-repeat;
     position: relative;
     height: 71rem;
+}
+
+@media screen and (min-width: 1600px) {
+    .hero{
+        background-image: url("../img/Photo\ arrière-plan@2x.png");
+        height: 90rem;
+        background-size: 250rem;
+    }
 }
 
 .hero-welcome{
@@ -58,7 +67,7 @@ h2{
     top: 20%;
     color: white;
     padding: 3rem;
-    margin-right: 2rem;
+    margin-right: 4rem;
 }
 
 .hero-link{
@@ -80,7 +89,7 @@ h2{
 
 @media screen and (min-width: 992px) {
     .hero-welcome{
-        max-height: 50rem;
+        height: 30rem;
         position: absolute;
         top: 40%;
         right: 5%;

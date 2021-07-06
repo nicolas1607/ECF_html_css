@@ -248,12 +248,10 @@ h3 {
   padding: 0.25rem 1rem;
   background-color: #FD7E37;
   border: none;
-  transition: 0.3s;
 }
 
 .toggle-menu img {
   width: 4rem;
-  padding: 0;
   margin-top: 1rem;
 }
 
@@ -263,15 +261,23 @@ h3 {
   top: 6rem;
   left: 0;
   right: 0;
-  background-color: var(--accent);
-  transition: 0.5s;
+  display: flex;
   flex-direction: column;
+  padding: 2rem;
+  border-top: solid 0.1px lightgray;
 }
 
-@media screen and (min-width: 680px) {
+@media screen and (min-width: 736px) {
   .menu {
     display: flex;
     flex-direction: row;
+    padding: 1rem 4rem;
+  }
+}
+@media screen and (min-width: 992px) {
+  .menu {
+    padding: 0;
+    border: transparent;
   }
 }
 #menu {
@@ -279,13 +285,7 @@ h3 {
 }
 
 .menu[hidden] {
-  display: flex;
   visibility: hidden;
-}
-
-.menu:not([hidden]) {
-  display: flex;
-  transform: translateX(0);
 }
 
 .menu-link {
@@ -295,7 +295,6 @@ h3 {
   line-height: 1.2;
   color: #fff;
   text-decoration: none;
-  transition: 0.3s;
 }
 
 .menu-link:hover,
@@ -310,10 +309,8 @@ h3 {
 
   .menu,
 .menu[hidden] {
-    display: flex;
     visibility: visible;
     position: static;
-    transform: translateX(0);
   }
 }
 .actu-article {
@@ -467,6 +464,9 @@ footer .footer {
 .contact .contact-title {
   font-weight: 600;
 }
+.contact .contact-tel:hover {
+  text-decoration: underline;
+}
 
 .mention {
   display: flex;
@@ -478,8 +478,14 @@ footer .footer {
 .mention .politique-conf {
   margin-left: 2rem;
 }
+.mention .politique-conf:hover {
+  text-decoration: underline;
+}
 .mention .mention-legale {
   margin-left: 2rem;
+}
+.mention .mention-legale:hover {
+  text-decoration: underline;
 }
 
 @media screen and (min-width: 1200px) {
@@ -498,12 +504,22 @@ footer .footer {
   grid-template-columns: 1fr 1fr 1fr;
   gap: 3rem;
 }
+.network a:hover {
+  transform: translateY(-1rem);
+  transition-duration: 0.2s;
+}
 
 .etudiant, .actu, .module, .form-contact, .politique, .mention .hero-content, .article {
   padding-top: 8rem;
   padding-bottom: 8rem;
 }
 
+@media screen and (min-width: 1600px) {
+  .etudiant, .actu, .module, .form-contact, .politique, .mention .hero-content, .article {
+    padding-top: 14rem;
+    padding-bottom: 14rem;
+  }
+}
 h1 {
   font-size: 3.2rem;
   line-height: 7.6rem;
@@ -533,10 +549,18 @@ h2 {
 /* Hero */
 .hero {
   background-image: url("../img/Photo arrière-plan.png");
+  background-repeat: no-repeat;
   position: relative;
   height: 71rem;
 }
 
+@media screen and (min-width: 1600px) {
+  .hero {
+    background-image: url("../img/Photo arrière-plan@2x.png");
+    height: 90rem;
+    background-size: 250rem;
+  }
+}
 .hero-welcome {
   display: flex;
   flex-direction: column;
@@ -548,7 +572,7 @@ h2 {
   top: 20%;
   color: white;
   padding: 3rem;
-  margin-right: 2rem;
+  margin-right: 4rem;
 }
 
 .hero-link {
@@ -569,7 +593,7 @@ h2 {
 }
 @media screen and (min-width: 992px) {
   .hero-welcome {
-    max-height: 50rem;
+    height: 30rem;
     position: absolute;
     top: 40%;
     right: 5%;

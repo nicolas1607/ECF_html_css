@@ -24,6 +24,9 @@ footer{
     .contact-title{
         font-weight: 600;
     }
+    .contact-tel:hover{
+        text-decoration: underline;
+    }
 }
 
 .mention{
@@ -34,9 +37,15 @@ footer{
     margin-bottom: 5rem;
     .politique-conf{
         margin-left: 2rem;
+        &:hover{
+            text-decoration: underline;
+        }
     }
     .mention-legale{
         margin-left: 2rem;
+        &:hover{
+            text-decoration: underline;
+        }
     }
 }
 @media screen and (min-width: 1200px) {
@@ -53,4 +62,8 @@ footer{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 3rem;
+    a:hover{
+        transform: translateY(-1rem);
+        transition-duration: .2s;
+    }
 }
